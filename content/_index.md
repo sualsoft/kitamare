@@ -1,7 +1,9 @@
 ---
+layout: home
 ############################### Banner #################################
 banner:
   enable: true
+  logo: KitaMare-Logo-2019-4-Wiederhergestellt-300x217.png
   title: "KitaMare Kölner Kita"
   subtitle: "Entdecken Erforschen Verstehen"
   topTitle: "SEIT 2011"
@@ -10,27 +12,27 @@ banner:
 card_section:
   enable: true
   card:
-    - titlle: "KitaMare | Raderberg"
+    - title: "KitaMare | Raderberg"
       image: "overview_kitamare_raderberg-212x300.jpg"
       content: "Als erste KitaMare eröffnete 2011 unsere Einrichtung in Köln Raderberg. Hier werden 88 Kinder zwischen einem halben und sechs Jahren in fünf Gruppen betreut."
       link: /raderberg
 
-    - titlle: "KitaMare | Sürth"
+    - title: "KitaMare | Sürth"
       image: "Overview_kitamare_sürth-212x300.jpg"
       content: "2012 folgte im Kölner Stadtteil Sürth die zweite KitaMare. In sechs Gruppen werden 110 Kinder im Alter von einem halben bis sechs Jahren betreut."
       link: /suerth
 
-    - titlle: "KitaMare | Zollstock"
+    - title: "KitaMare | Zollstock"
       image: "overview_kitamare_zollstock-212x300.jpg"
       content: "Ein Jahr darauf eröffnete 2013 die dritte KitaMare in einer neuen Wohnsiedlung in Köln Zollstock. Hier werden ebenfalls 110 Kinder in 6 Gruppen betreut."
       link: /zollstock
 
-    - titlle: "KitaMare | Longerichh"
+    - title: "KitaMare | Longerichh"
       image: "overview_kitamare_raderberg-212x300.jpg"
       content: "Die Planung läuft auf Hochtouren! Die Eröffnung der vierten KitaMare mit sechs Gruppen im Stadtteil Köln Longerich ist für Anfang/ Mitte 2021 geplant."
       link: /
 
-    - titlle: "Ahoi, Wir suchen Dich"
+    - title: "Ahoi, Wir suchen Dich"
       image: "114307548_l-200x300.jpg"
       content: "Bewirb dich jetzt bei der KitaMare und werde Teil der Mannschaft."
       link: /km-job
