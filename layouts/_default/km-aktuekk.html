@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>{{.Title}} | {{.Site.Title}}</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+
+    <!-- Favicons -->
+    <link href="/assets/img/favicon.png" rel="icon" />
+    <link href="/assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+  
+
+    <!-- Vendor CSS Files -->
+    <link href="/assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link
+      href="/assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="/assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link
+      href="/assets/vendor/boxicons/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="/assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link href="/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+    <!-- Template Main CSS File -->
+    <link href="/assets/css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="wrap">
+      <!-- ======= Hero Section ======= -->
+      {{ partial "hero.html" }}
+      <!-- End Hero -->
+
+      <!-- ======= Header ======= -->
+      <header id="header" class="d-flex align-items-center">
+        <div class="container d-flex align-items-center justify-content-center">
+          <nav id="navbar" class="navbar">
+            <ul>
+              <li><a class="nav-link scrollto" href="/">KitaMare</a></li>
+              <li><a class="nav-link scrollto active" href="/km-aktuell">KM-Aktuell</a></li>
+              <li>
+                <a class="nav-link scrollto" href="/km-job">KM-Job</a>
+              </li>
+              <li>
+                <a class="nav-link scrollto" href="/raderberg">KM-Raderberg</a>
+              </li>
+              <li><a class="nav-link scrollto" href="/suerth">KM-Sürth</a></li>
+              <li><a class="nav-link scrollto" href="/zollstock">KM-Zollstock</a></li>
+              <li><a href="/anmeldeformular-fuer-ihr-kind">Anmeldung</a></li>
+
+              <li><a class="nav-link scrollto" href="/kontakt/">Kontakt</a></li>
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+          </nav>
+          <!-- .navbar -->
+        </div>
+      </header>
+      <!-- End Header -->
+
+      <main id="main">
+        <!-- ======= card Section ======= -->
+        <section >
+          <div class="container">
+            <div class="row d-flex justify-content-center align-items-center">
+              <div data-aos="fade-right" class="col-md-6 mt-4 text-column">
+                {{ .Content}}
+              </div>
+              <div data-aos="fade-right" class="col-md-6 mt-4 img-column">
+                <img src="/assets/img/20200420_150149.jpeg" alt="" class="img-fluid">
+                <img src="/assets/img/Glückssteine.png" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- End card Section -->
+
+        
+      </main>
+      <!-- End #main -->
+{{ partial "footer.html" }}
+  </body>
+</html>

@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>{{.Title}} | {{.Site.Title}}</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+
+    <!-- Favicons -->
+    <link href="/assets/img/favicon.png" rel="icon" />
+    <link href="/assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baumans&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,500;1,600;1,700;1,800&family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link href="/assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link
+      href="/assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="/assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link
+      href="/assets/vendor/boxicons/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="/assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link href="/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+    <!-- Template Main CSS File -->
+    <link href="/assets/css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="wrap">
+      <!-- ======= Hero Section ======= -->
+      {{ partial "hero.html" }}
+      <!-- End Hero -->
+
+      <!-- ======= Header ======= -->
+      <header id="header" class="d-flex align-items-center">
+        <div class="container d-flex align-items-center justify-content-center">
+          <nav id="navbar" class="navbar">
+            <ul>
+              <li><a class="nav-link scrollto" href="/">KitaMare</a></li>
+              <li>
+                <a class="nav-link scrollto" href="/km-aktuell">KM-Aktuell</a>
+              </li>
+              <li>
+                <a class="nav-link scrollto" href="/km-job">KM-Job</a>
+              </li>
+              <li>
+                <a class="nav-link scrollto" href="/raderberg">KM-Raderberg</a>
+              </li>
+              <li><a class="nav-link scrollto" href="/suerth">KM-Sürth</a></li>
+              <li>
+                <a class="nav-link scrollto" href="/zollstock">KM-Zollstock</a>
+              </li>
+              <li>
+                <a
+                  class="nav-link scrollto active"
+                  href="/anmeldeformular-fuer-ihr-kind"
+                  >Anmeldung</a
+                >
+              </li>
+
+              <li><a class="nav-link scrollto" href="/kontakt/">Kontakt</a></li>
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+          </nav>
+          <!-- .navbar -->
+        </div>
+      </header>
+      <!-- End Header -->
+
+      <main id="main">
+        <!-- ======= card Section ======= -->
+        <section>
+          <div class="container">
+            <div class="row d-flex justify-content-center">
+              <div class="section-title">
+                <h2>Anmeldeformular für Ihr Kind</h2>
+              </div>
+
+              <div data-aos="fade-right" class="col-md-10 mt-4 form-colum">
+                <form class="row g-3">
+                  <div class="col-md-12">
+                    <label for="form-select"
+                      >Bitte wähle Sie den Standort der KitaMare Einrichtung
+                      <span>*</span></label
+                    >
+                    <select
+                      class="form-select"
+                      aria-label="Default select example"
+                    >
+                      <option selected>Raderberg</option>
+                      <option value="Sürth">Sürth</option>
+                      <option value="zollstock">Zollstock</option>
+                      <option value="longerich">
+                        Longerich ( Eröffnung vorraussichtlich Frühjahr / Sommer
+                        2021
+                      </option>
+                    </select>
+                  </div>
+                  <div class="col-md-12">
+                    <label for="date" class="form-label"
+                      >Anmeldung zum <span>*</span></label
+                    >
+                    <input type="date" class="form-control" id="date" />
+                  </div>
+                  <div class="col-md-6">
+                    <label for="date" class="form-label"
+                      >Name des Kindes <span>*</span></label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="fname"
+                      placeholder="Vorname"
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <label for="date" class="form-label">.</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="lname"
+                      placeholder="Nachname"
+                    />
+                  </div>
+                  <div class="col-md-12">
+                    <label for="date" class="form-label"
+                      >Geburtsdatum des Kindes <span>*</span></label
+                    >
+                    <input type="date" class="form-control" id="date2" />
+                  </div>
+                  <div class="col-md-6">
+                    <label for="date" class="form-label"
+                      >Name des Erziehungsberechtigten 1 <span>*</span></label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="fname"
+                      placeholder="Vorname"
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <label for="date" class="form-label">.</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="lname"
+                      placeholder="Nachname"
+                    />
+                  </div>
+                  <div class="col-12">
+                    <label for="email" class="form-label"
+                      >Email <span>*</span></label
+                    >
+                    <input type="email" class="form-control" id="email" />
+                  </div>
+                  <div class="col-12">
+                    <label for="mobil" class="form-label"
+                      >Mobil <span>*</span></label
+                    >
+                    <input type="number" class="form-control" id="mobil" />
+                  </div>
+                  <div class="col-12">
+                    <label for="mobil" class="form-label"
+                      >Telefon <span>*</span></label
+                    >
+                    <input type="number" class="form-control" id="mobil" />
+                  </div>
+                  <div class="col-12">
+                    <label for="address" class="form-label"
+                      >Anschrift <span>*</span></label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="address"
+                      placeholder="Straße & Hausnummer"
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <input
+                      type="number"
+                      class="form-control"
+                      id="zip"
+                      placeholder="Postleitzahl"
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="Ort"
+                      placeholder="Ort"
+                    />
+                  </div>
+
+                  <div class="col-md-6">
+                    <label for="Vorname" class="form-label"
+                      >Name des Erziehungsberechtigten 2 <span>*</span></label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="fname"
+                      placeholder="Vorname"
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <label for="Nachname" class="form-label">.</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="lname"
+                      placeholder="Nachname"
+                    />
+                  </div>
+                  <div class="col-12">
+                    <label for="email" class="form-label"
+                      >Email <span>*</span></label
+                    >
+                    <input type="email" class="form-control" id="email" />
+                  </div>
+                  <div class="col-12">
+                    <label for="mobil" class="form-label"
+                      >Mobil <span>*</span></label
+                    >
+                    <input type="number" class="form-control" id="mobil" />
+                  </div>
+                  <div class="col-12">
+                    <label for="mobil" class="form-label">Telefon</label>
+                    <input type="number" class="form-control" id="mobil" />
+                  </div>
+                  <div class="col-12">
+                    <label for="address" class="form-label"
+                      >Anschrift <span>*</span></label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="address"
+                      placeholder="Straße & Hausnummer"
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <input
+                      type="number"
+                      class="form-control"
+                      id="zip"
+                      placeholder="Postleitzahl"
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="Ort"
+                      placeholder="Ort"
+                    />
+                  </div>
+
+                  <div class="col-md-12">
+                    <label for="exampleFormControlTextarea1"
+                      >Sie haben hier die Möglichkeit eine Anmerkung mit zu
+                      senden <span>*</span></label
+                    >
+                    <textarea
+                      class="form-control"
+                      id="exampleFormControlTextarea1"
+                      rows="3"
+                    ></textarea>
+                  </div>
+                  <div class="col-md-12">
+                    <label for="address" class="form-label"
+                      >Ich bin kein Roboter : Bitte tragen Sie die Anwort ein...
+                      <span>*</span></label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="address"
+                      placeholder="Was ergibt 2 und 2 ... Immer und überall"
+                    />
+                  </div>
+                  <div class="col-md-12">
+                    <button type="submit" class="btn btn-primary">
+                      Absenden
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- End card Section -->
+      </main>
+      <!-- End #main -->
+      {{ partial "footer.html" }}
+    </div>
+  </body>
+</html>
