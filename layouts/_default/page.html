@@ -73,40 +73,40 @@
       <!-- End Header -->
 
       <main id="main">
-        <!-- ======= card Section ======= -->
+        
         <section>
           <div class="container editable">
             <div class="row d-flex justify-content-center">
+              <!-- ======= card Section ======= -->
+              {{ if .Params.main_parts.enable }}
+              <!---->
+              {{ with .Params.main_parts }}
               <div class="section-title">
-                <h2>Ahoi, genau Dich haben wir gesucht.</h2>
+                <h2>{{.title}}</h2>
               </div>
-
+              
               <div data-aos="fade-right" class="col-md-6 mt-4">
                 <img
-                  src="/assets/img/15893999_s.jpg"
+                  src="/assets/img/{{.image}}"
                   alt=""
                   class="img-fluid"
                 />
               </div>
               <div data-aos="fade-right" class="col-md-6 mt-4 text-column">
                 <h4 class="text-center">
-                  <i class="bi bi-person-check-fill"></i>
+                  <i class="{{.icon}}"></i>
                 </h4>
-                <h4 class="text-center">
-                  Du bist herzlich, verantwortungsbewusst, begeisterungsfähig,
-                  empathisch, engagiert, flexibel und motiviert, dann werde Teil
-                  unseres Teams in einer unserer Einrichtungen in Köln.
-                </h4>
-                <p class="text-center h5 mt-3 mb-4 p-3">
-                  Erzieher (m/w/d) Kindheitspädagoge
-                  o.ä.(Fach-)Hochschulabschluss(m/w/d) Auszubildende/
-                  Anerkennungsjahrpraktikant(m/w/d) Praktikant(m/w/d)
-                </p>
+                <h4 class="text-center">{{.icon_title}}</h4>
+                {{end}}
+              <!---->
+              {{end}}
+                
                 {{ .Content}}
               </div>
             </div>
           </div>
         </section>
+        
         <!-- End card Section -->
       </main>
       <!-- End #main -->
