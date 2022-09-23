@@ -108,6 +108,65 @@
         </section>
         
         <!-- End card Section -->
+
+        <!-- ======= intro Section ======= -->
+        {{ if .Params.bottom_section.enable }}
+        <!---->
+        {{ with .Params.bottom_section }}
+        <section class="content-section">
+          <div class="container">
+            <div class="row justify-content-center">
+              
+              {{ if .team.enable }}
+              <!---->
+              {{ with .team }}
+              <div data-aos="fade-right" class="col-md-4 content-new">
+                <div class="title">
+                  <i class="{{.icon}}"></i>
+                  <p>{{.title | markdownify}}</p>
+                </div>
+                <ul class="content-text">
+                  {{range .members}}
+                  <li>
+                    <i class="bi bi-star-fill"></i>
+                    <p>{{.}}</p>
+                  </li>
+                  {{end}}
+                </ul>
+              </div>
+              {{end}}
+              <!---->
+              {{end}}
+
+              {{ if .map.enable }}
+              <!---->
+              {{ with.map }}
+              <div class="col-md-8">
+                <div class="title">
+                  <i class="{{.icon}}"></i>
+                  <p>{{.title}}</p>
+                </div>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb={{.map_code}}"
+                  width="100%"
+                  height="100%"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+
+              {{end}}
+              <!---->
+              {{end}}
+            </div>
+          </div>
+        </section>
+        {{end}}
+        <!---->
+        {{end}}
+        <!-- End intro Section -->
       </main>
       <!-- End #main -->
       {{ partial "footer.html" }}

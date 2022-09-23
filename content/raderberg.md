@@ -1,59 +1,63 @@
 ---
 title: "KM-Raderberg"
-layout: raderberg
-images:
+layout: page
+main_parts:
   enable: true
-  title:
-  images:
-map_code: "!1m14!1m8!1m3!1d5035.937961966587!2d7.01013!3d50.868774!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x293231024c8a77d2!2sKitaMare%20gGmbH!5e0!3m2!1sen!2sus!4v1662346452898!5m2!1sen!2sus"
-team:
-  title: "Team Surth"
-  members:
-    - Vera Otto | Management
+  title: "KitaMare Raderberg"
+  image: "overview_kitamare_raderberg-768x1086.jpg"
+  icon: "bi bi-star-fill"
+  icon_title: "Gruppenstruktur"
 
-    - Johanna Konz | deputy Management
 
-    - Meltem Akyuz
+bottom_section:
+  enable: true
+  map:
+    enable: true
+    title: Karte
+    icon: bi bi-star-fill
+    map_code: "!1m14!1m8!1m3!1d5035.937961966587!2d7.01013!3d50.868774!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x293231024c8a77d2!2sKitaMare%20gGmbH!5e0!3m2!1sen!2sus!4v1662346452898!5m2!1sen!2sus"
 
-    - Helena Benkendorff
+  team:
+    enable: true
+    icon: bi bi-star-fill
+    title: "Team Raderberg"
+    members:
+    - Nasrin Azarvand | Leitung
 
-    - Jasmine Duenow
+    - Cordula Strauch | Stellv. Leitung
 
-    - Eda Sentürk
+    - Melanie Aussem
 
-    - Angelina Hoven
+    - Vanessa de Beyer
 
-    - Teresa Joppien
+    - Maria Cascina
 
-    - Tamara Kastenholz
+    - Meltem Celik
 
-    - Nathalie Kenzler
+    - Julia Katrin Hahn
 
-    - Melanie Kolzem
+    - Natalia Huber
 
-    - Janina Nitsche
+    - Eva Jarmulkowicz
 
-    - Sina Schellenberg
+    - Sarah Karol
 
-    - Vanessa Trovato
+    - Sandra Kiehn
 
-    - Leila Blank
+    - Aylin Moeller
 
-    - Virginie Berkau
+    - Selina Olmscheid
 
-    - Catherine Dankworth
+    - Isabell Preiditsch
 
-    - Natasha Lillig
+    - Jasmin Siep
 
-    - Laura Bracht
+    - Elvira Sepic
 
-    - Tamara Hansman
+    - Lisa Unkenholz
 
-    - Anni(ka) Moosbrucker
+    - Sylvia Wasser
 
-    - Desiree Rahm
-
-map: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5035.937961966587!2d7.01013!3d50.868774!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x293231024c8a77d2!2sKitaMare%20gGmbH!5e0!3m2!1sen!2sus!4v1662346452898!5m2!1sen!2sus"
 ---
 
 Die KitaMare Raderberg betreut in fünf Gruppen 88 Kinder. Im Erdgeschoss werden zwei U3-Gruppen mit je 11 Kindern zwischen einem halben und drei Jahren betreut. Die großzügig gestalteten Gruppenräume bieten den Kindern über verschiedene Bereiche und Materialien vielfältige Möglichkeiten, sich selbst und ihre Umwelt spielerisch wahrzunehmen und zu entdecken. Ausruhen können sich die Kleinsten in gemütlich gestalteten Schlafräumen.
