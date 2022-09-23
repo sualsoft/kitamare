@@ -1,24 +1,36 @@
 ---
 title: "KM-surth"
-layout: suerth
-description: We'd love to hear from you
-images:
+layout: page
+main_parts:
   enable: true
-  title:
-  images:
-map_code: "!1m14!1m8!1m3!1d5035.937961966587!2d7.01013!3d50.868774!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x293231024c8a77d2!2sKitaMare%20gGmbH!5e0!3m2!1sen!2sus!4v1662346452898!5m2!1sen!2sus"
-team:
-  title: "Team Surth"
-  members:
-    - Vera Otto | Management
+  title: "KitaMare Sürth"
+  image: "Overview_kitamare_sürth.jpg"
+  icon: "bi bi-star-fill"
+  icon_title: "Gruppenstruktur"
 
-    - Johanna Konz | deputy Management
 
-    - Meltem Akyuz
+bottom_section:
+  enable: true
+  map:
+    enable: true
+    title: Karte
+    icon: bi bi-star-fill
+    map_code: "!1m14!1m8!1m3!1d5035.937961966587!2d7.01013!3d50.868774!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x293231024c8a77d2!2sKitaMare%20gGmbH!5e0!3m2!1sen!2sus!4v1662346452898!5m2!1sen!2sus"
+
+  team:
+    enable: true
+    icon: bi bi-star-fill
+    title: "Team Sürth"
+    members:
+    - Vera Otto | Leitung
+
+    - Johanna Konz | Stellv. Leitung
+
+    - Meltem Akyüz
 
     - Helena Benkendorff
 
-    - Jasmine Duenow
+    - Jasmin Dünow
 
     - Eda Sentürk
 
@@ -42,19 +54,19 @@ team:
 
     - Virginie Berkau
 
-    - Catherine Dankworth
+    - Catharina Danckworth
 
-    - Natasha Lillig
+    - Natascha Lillig
 
     - Laura Bracht
 
-    - Tamara Hansman
+    - Tamara Hansmann
 
     - Anni(ka) Moosbrucker
 
     - Desiree Rahm
+    
 
-map: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5035.937961966587!2d7.01013!3d50.868774!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x293231024c8a77d2!2sKitaMare%20gGmbH!5e0!3m2!1sen!2sus!4v1662346452898!5m2!1sen!2sus"
 ---
 
 In unserer Kindertagesstätte in Köln Sürth bieten wir 110 Kita-Plätze an, die sich auf sechs Gruppen in drei verschiedenen Altersstrukturen etagenweise verteilen.
