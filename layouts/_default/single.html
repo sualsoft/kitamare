@@ -78,12 +78,15 @@
 
       <main id="main">
         <!-- ======= card Section ======= -->
+        {{ if .Params.banner_image.enable }}
+        <!---->
+        {{ with .Params.banner_image }}
         <section>
           <div class="container editable">
             <div class="row d-flex justify-content-center align-items-center">
               <div data-aos="fade-right" class="col-md-6 mt-4">
                 <img
-                  src="/assets/img/bg_paragraph-ooy12yiafbt4a5abgtcnmibwup8kbhnyzkhu7z2en4.png"
+                  src="/assets/img/{{.image}}"
                   alt=""
                   class="img-fluid"
                 />
@@ -91,6 +94,9 @@
             </div>
           </div>
         </section>
+        {{end}}
+        <!---->
+        {{ end }}
         <!-- End card Section -->
 
         <!-- ======= intro Section ======= -->
