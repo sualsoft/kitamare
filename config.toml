@@ -1,3 +1,45 @@
 baseURL = 'http://example.org/'
 languageCode = 'en-us'
 title = 'KitaMare'
+
+# main menu
+[menu]
+[[menu.main]]
+  name = "KitaMare"
+  url = "/"
+  weight = 1
+
+[[menu.main]]
+  name = "KM-Aktuell"
+  url = "km-aktuell"
+  weight = 2
+
+[[menu.main]]
+  name = "KM-Job"
+  url = "km-job"
+  weight = 3
+
+[[menu.main]]
+  name = "KM-Raderberg"
+  url = "raderberg"
+  weight = 4
+
+[[menu.main]]
+  name = "KM-Sürth"
+  url = "suerth"
+  weight = 5
+
+[[menu.main]]
+  name = "KM-Zollstock"
+  url = "zollstock"
+  weight = 6
+
+[[menu.main]]
+  name = "Anmeldung"
+  url = "anmeldeformular-fuer-ihr-kind"
+  weight = 7
+
+[[menu.main]]
+  name = "Kontakt"
+  url = "kontakt"
+  weight = 8

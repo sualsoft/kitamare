@@ -1,175 +1,87 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+{{ define "main" }}
 
-    <title>{{.Title}} | {{.Site.Title}}</title>
-    <meta content="" name="description" />
-    <meta content="" name="keywords" />
+<section>
+  <div class="container editable">
+    <div class="row d-flex justify-content-center">
+      <!-- ======= card Section ======= -->
+      {{ if .Params.main_parts.enable }}
+      <!---->
+      {{ with .Params.main_parts }}
+      <div class="section-title">
+        <h2>{{.title}}</h2>
+      </div>
 
-    <!-- Favicons -->
-    <link href="/assets/img/favicon.png" rel="icon" />
-    <link href="/assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
-
-    <!-- Vendor CSS Files -->
-    <link href="/assets/vendor/aos/aos.css" rel="stylesheet" />
-    <link
-      href="/assets/vendor/bootstrap/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="/assets/vendor/bootstrap-icons/bootstrap-icons.css"
-      rel="stylesheet"
-    />
-    <link
-      href="/assets/vendor/boxicons/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="/assets/vendor/glightbox/css/glightbox.min.css"
-      rel="stylesheet"
-    />
-    <link href="/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
-
-    <!-- Template Main CSS File -->
-    <link href="/assets/css/style.css" rel="stylesheet" />
-  </head>
-
-  <body>
-    <div class="wrap">
-      <!-- ======= Hero Section ======= -->
-      {{ partial "hero.html" }}
-      <!-- End Hero -->
-
-      <!-- ======= Header ======= -->
-      <header id="header" class="d-flex align-items-center editable">
-        <div class="container d-flex align-items-center justify-content-center">
-          <nav id="navbar" class="navbar">
-            <ul>
-              <li><a class="nav-link scrollto" href="/">KitaMare</a></li>
-              <li>
-                <a class="nav-link scrollto" href="/km-aktuell">KM-Aktuell</a>
-              </li>
-              <li>
-                <a class="nav-link scrollto active" href="/km-job">KM-Job</a>
-              </li>
-              <li>
-                <a class="nav-link scrollto" href="/raderberg">KM-Raderberg</a>
-              </li>
-              <li><a class="nav-link scrollto" href="/suerth">KM-Sürth</a></li>
-              <li>
-                <a class="nav-link scrollto" href="/zollstock">KM-Zollstock</a>
-              </li>
-              <li><a href="/anmeldeformular-fuer-ihr-kind">Anmeldung</a></li>
-
-              <li><a class="nav-link scrollto" href="/kontakt/">Kontakt</a></li>
-            </ul>
-            <i class="bi bi-list mobile-nav-toggle"></i>
-          </nav>
-          <!-- .navbar -->
-        </div>
-      </header>
-      <!-- End Header -->
-
-      <main id="main">
-        
-        <section>
-          <div class="container editable">
-            <div class="row d-flex justify-content-center">
-              <!-- ======= card Section ======= -->
-              {{ if .Params.main_parts.enable }}
-              <!---->
-              {{ with .Params.main_parts }}
-              <div class="section-title">
-                <h2>{{.title}}</h2>
-              </div>
-              
-              <div data-aos="fade-right" class="col-md-6 mt-4">
-                <img
-                  src="/assets/img/{{.image}}"
-                  alt=""
-                  class="img-fluid"
-                />
-              </div>
-              <div data-aos="fade-right" class="col-md-6 mt-4 text-column">
-                <h4 class="text-center">
-                  <i class="{{.icon}}"></i>
-                </h4>
-                <h4 class="text-center">{{.icon_title}}</h4>
-                {{end}}
-              <!---->
-              {{end}}
-                
-                {{ .Content}}
-              </div>
-            </div>
-          </div>
-        </section>
-        
-        <!-- End card Section -->
-
-        <!-- ======= intro Section ======= -->
-        {{ if .Params.bottom_section.enable }}
-        <!---->
-        {{ with .Params.bottom_section }}
-        <section class="content-section">
-          <div class="container">
-            <div class="row justify-content-center">
-              
-              {{ if .team.enable }}
-              <!---->
-              {{ with .team }}
-              <div data-aos="fade-right" class="col-md-4 content-new">
-                <div class="title">
-                  <i class="{{.icon}}"></i>
-                  <p>{{.title | markdownify}}</p>
-                </div>
-                <ul class="content-text">
-                  {{range .members}}
-                  <li>
-                    <i class="bi bi-star-fill"></i>
-                    <p>{{.}}</p>
-                  </li>
-                  {{end}}
-                </ul>
-              </div>
-              {{end}}
-              <!---->
-              {{end}}
-
-              {{ if .map.enable }}
-              <!---->
-              {{ with.map }}
-              <div class="col-md-8">
-                <div class="title">
-                  <i class="{{.icon}}"></i>
-                  <p>{{.title}}</p>
-                </div>
-                <iframe
-                  src="https://www.google.com/maps/embed?pb={{.map_code}}"
-                  width="100%"
-                  height="100%"
-                  style="border: 0"
-                  allowfullscreen=""
-                  loading="lazy"
-                  referrerpolicy="no-referrer-when-downgrade"
-                ></iframe>
-              </div>
-
-              {{end}}
-              <!---->
-              {{end}}
-            </div>
-          </div>
-        </section>
+      <div data-aos="fade-right" class="col-md-6 mt-4">
+        <img src="/assets/img/{{.image}}" alt="" class="img-fluid" />
+      </div>
+      <div data-aos="fade-right" class="col-md-6 mt-4 text-column">
+        <h4 class="text-center">
+          <i class="{{.icon}}"></i>
+        </h4>
+        <h4 class="text-center">{{.icon_title}}</h4>
         {{end}}
         <!---->
-        {{end}}
-        <!-- End intro Section -->
-      </main>
-      <!-- End #main -->
-      {{ partial "footer.html" }}
+        {{end}} {{ .Content}}
+      </div>
     </div>
-  </body>
-</html>
+  </div>
+</section>
+
+<!-- End card Section -->
+
+<!-- ======= intro Section ======= -->
+{{ if .Params.bottom_section.enable }}
+<!---->
+{{ with .Params.bottom_section }}
+<section class="content-section">
+  <div class="container">
+    <div class="row justify-content-center">
+      {{ if .team.enable }}
+      <!---->
+      {{ with .team }}
+      <div data-aos="fade-right" class="col-md-4 content-new">
+        <div class="title">
+          <i class="{{.icon}}"></i>
+          <p>{{.title | markdownify}}</p>
+        </div>
+        <ul class="content-text">
+          {{range .members}}
+          <li>
+            <i class="bi bi-star-fill"></i>
+            <p>{{.}}</p>
+          </li>
+          {{end}}
+        </ul>
+      </div>
+      {{end}}
+      <!---->
+      {{end}} {{ if .map.enable }}
+      <!---->
+      {{ with.map }}
+      <div class="col-md-8">
+        <div class="title">
+          <i class="{{.icon}}"></i>
+          <p>{{.title}}</p>
+        </div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb={{.map_code}}"
+          width="100%"
+          height="100%"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+
+      {{end}}
+      <!---->
+      {{end}}
+    </div>
+  </div>
+</section>
+{{end}}
+<!---->
+{{end}}
+<!-- End intro Section -->
+{{end}}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  {{partial "head.html"}}
+
+  <body>
+    <div class="wrap">
+      <!-- ======= Hero Section ======= -->
+      {{ if .Params.banner.enable }}
+      <!---->
+      {{ with .Params.banner }}
+      <section id="hero">
+        <div class="hero-container" data-aos="fade-up">
+          <p>{{.topTitle | markdownify}}</p>
+          <h1>{{.title | markdownify}}</h1>
+          <img
+            src="/assets/img/{{ .logo}}"
+            alt=""
+            class="img-fluid"
+          />
+        </div>
+        <div class="herop-container">
+          <h2>{{.subtitle | markdownify}}</h2>
+        </div>
+      </section>
+      {{end}}
+      <!---->
+      {{end}}
+      <!-- End Hero -->
+
+      <!-- ======= Header ======= -->
+      {{  partial "header.html" . }}
+      <!-- End Header -->
+
+      <main id="main">
+        {{ block "main" . }}{{ end }}
+      </main>
+
+      {{ partial "footer.html" }}
+  </body>
+</html>

@@ -1,118 +1,32 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+{{ define "main" }}
 
-    <title>{{.Title}} | {{ .Site.Title}}</title>
-    <meta content="" name="description" />
-    <meta content="" name="keywords" />
-
-    <!-- Favicons -->
-    <link href="/assets/img/favicon.png" rel="icon" />
-    <link href="/assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
-
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Baumans&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,500;1,600;1,700;1,800&family=Righteous&display=swap"
-      rel="stylesheet"
-    />
-
-    <!-- Vendor CSS Files -->
-    <link href="/assets/vendor/aos/aos.css" rel="stylesheet" />
-    <link
-      href="/assets/vendor/bootstrap/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="/assets/vendor/bootstrap-icons/bootstrap-icons.css"
-      rel="stylesheet"
-    />
-    <link
-      href="/assets/vendor/boxicons/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="/assets/vendor/glightbox/css/glightbox.min.css"
-      rel="stylesheet"
-    />
-    <link href="/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
-
-    <!-- Template Main CSS File -->
-    <link href="/assets/css/style.css" rel="stylesheet" />
-  </head>
-
-  <body>
-    <div class="wrap">
-      <!-- ======= Hero Section ======= -->
-      {{ partial "hero.html" }}
-      <!-- End Hero -->
-
-      <!-- ======= Header ======= -->
-      <header id="header" class="d-flex align-items-center editable">
-        <div class="container d-flex align-items-center justify-content-center">
-          <nav id="navbar" class="navbar">
-            <ul>
-              <li><a class="nav-link" href="/">KitaMare</a></li>
-              <li><a class="nav-link" href="/km-aktuell">KM-Aktuell</a></li>
-              <li>
-                <a class="nav-link" href="/km-job">KM-Job</a>
-              </li>
-              <li>
-                <a class="nav-link" href="/raderberg">KM-Raderberg</a>
-              </li>
-              <li><a class="nav-link" href="/suerth">KM-Sürth</a></li>
-              <li><a class="nav-link" href="/zollstock">KM-Zollstock</a></li>
-              <li><a href="/anmeldeformular-fuer-ihr-kind">Anmeldung</a></li>
-
-              <li><a class="nav-link" href="/kontakt/">Kontakt</a></li>
-            </ul>
-            <i class="bi bi-list mobile-nav-toggle"></i>
-          </nav>
-          <!-- .navbar -->
-        </div>
-      </header>
-      <!-- End Header -->
-
-      <main id="main">
-        <!-- ======= card Section ======= -->
-        {{ if .Params.banner_image.enable }}
-        <!---->
-        {{ with .Params.banner_image }}
-        <section>
-          <div class="container editable">
-            <div class="row d-flex justify-content-center align-items-center">
-              <div data-aos="fade-right" class="col-md-6 mt-4">
-                <img
-                  src="/assets/img/{{.image}}"
-                  alt=""
-                  class="img-fluid"
-                />
-              </div>
-            </div>
-          </div>
-        </section>
-        {{end}}
-        <!---->
-        {{ end }}
-        <!-- End card Section -->
-
-        <!-- ======= intro Section ======= -->
-        <section class="content-section">
-          <div class="container">
-            <div class="row justify-content-center">
-              <div data-aos="fade-right" class="col-md-9 mt-4 content-text">
-                {{ .Content}}
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- End intro Section -->
-      </main>
-      <!-- End #main -->
-      {{ partial "footer.html" }}
+<!-- ======= card Section ======= -->
+{{ if .Params.banner_image.enable }}
+<!---->
+{{ with .Params.banner_image }}
+<section>
+  <div class="container editable">
+    <div class="row d-flex justify-content-center align-items-center">
+      <div data-aos="fade-right" class="col-md-6 mt-4">
+        <img src="/assets/img/{{.image}}" alt="" class="img-fluid" />
+      </div>
     </div>
-  </body>
-</html>
+  </div>
+</section>
+{{end}}
+<!---->
+{{ end }}
+<!-- End card Section -->
+
+<!-- ======= intro Section ======= -->
+<section class="content-section">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div data-aos="fade-right" class="col-md-9 mt-4 content-text">
+        {{ .Content}}
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End intro Section -->
+{{ end }}
